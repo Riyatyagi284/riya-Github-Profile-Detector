@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github profile detector</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">DevDetective</h1>
+            <div id="btn-mode">
+                <p id="mode-text">dark</p>
+                <p id="mode-text" style="display:none">light</p>
+                <div class="icon-container">
+                    <img src="./images/moon-icon.svg" id="mode-icon">
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="app">
+                <div class="searchbar-container">
+                    <input type="search" name="user-input" id="input" placeholder="Enter a GitHub username..." required>
+                    <div class="error">
+                        <p id="no-result" style="display:none">no search result</p>
+                    </div>
+                    <div>
+                        <button class="btn-search" id="submit">Search</button>
+                    </div>
+                    <div class="profile-container active">
+                        <div class="profile-content">
+                            <div class="profile-header">
+                                <img id="avatar" src="https://avatars.githubusercontent.com/u/64855541?v=4" alt="">
+                                <div class="profile-right">
+                                    <div class="profile-info-wrapper">
+                                        <div class="profile-name">
+                                            <h2 id="name">Pranay Gupta</h2>
+                                            <a href="https://github.com/thepranaygupta" target="_blank"
+                                                rel="noopener noreferrer" id="user">@thepranaygupta</a>
+                                        </div>
+                                        <div class="para">
+                                        <p id="date">Joined 05 May 2020</p>
+                                    </div>
+                                    </div>
+                                    <p id="bio">Ex @permissionles, Ex @gumlet,<br>Frontend Developer at
+                                        @we-frame,<br>Core
+                                        Member at @aec-coding-club,<br>Technical Expert at @gsasansol</p>
+                                    <div class="profile-stats-wrapper">
+                                        <div class="profile-stat">
+                                            <p class="stat-title">Repos</p>
+                                            <p id="repos" class="stat-value">71</p>
+                                        </div>
+                                        <div class="profile-stat">
+                                            <p class="stat-title">Followers</p>
+                                            <p id="followers" class="stat-value">439</p>
+                                        </div>
+                                        <div class="profile-stat">
+                                            <p class="stat-title">Following</p>
+                                            <p id="following" class="stat-value">140</p>
+                                        </div>
+                                    </div>
+                                    <div class="profile-bottom-wrapper">
+                                        
+                                            <div class="profile-info">
+                                                <div class="bottom-icons"><img src="./images/location-icon.svg"
+                                                        alt="">
+                                                </div>
+                                                <p id="location">Kolkata, India</p>
+                                            </div>
+                                            <div class="profile-info">
+                                                <div class="bottom-icons"><img src="./images/website-icon.svg"
+                                                        alt="">
+                                                </div>
+                                                <a href="https://thepranaygupta.github.io"
+                                                    id="page">https://thepranaygupta.github.io</a>
+                                            </div>
+                                        
+                                        
+                                            <div class="profile-info">
+                                                <div class="bottom-icons"><img src="./images/twitter-icon.svg"
+                                                        alt="">
+                                                </div>
+                                                <a href="https://twitter.com/thepranaygupta"
+                                                    id="twitter">thepranaygupta</a>
+                                            </div>
+                                            <div class="profile-info">
+                                                <div class="bottom-icons"><img src="./images/company-icon.svg"
+                                                        alt="">
+                                                </div>
+                                                <p id="company">@permissionles</p>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
